@@ -30,7 +30,7 @@ int main(int argc, char** argv)
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 	glutInitWindowSize(600,600);
-	glutCreateWindow("SNAKE - Rudra Nil Basu");
+	glutCreateWindow("Xplode");
 	glutDisplayFunc(display_callback);
 	glutReshapeFunc(reshape_callback);
 	glutTimerFunc(0,timer_callback,0);
