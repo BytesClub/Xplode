@@ -1,5 +1,9 @@
 /*
- * Copywrite: Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ * Xplode - game.h
+ * Copyright (C) 2016 Bytes Club
+ * 
+ * AUTHORS
+ * Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  */
 
 #define UP 1

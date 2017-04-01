@@ -1,5 +1,10 @@
 /*
- * Copyright: Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ * Xplode - main.cpp
+ * 
+ * Copyright (C) 2016 Bytes Club
+ *
+ * AUTHORS:
+ * Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  */
 
 #include<GL/gl.h>
