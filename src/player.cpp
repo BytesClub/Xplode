@@ -11,8 +11,6 @@
 #include "player.h"
 #include "game.h"
 
-#include <stdio.h>
-
 int posX = 20, posY = 20;
 short sDirection = REST;
 int currentState = ALIVE;
@@ -26,7 +24,6 @@ void drawPlayer()
 	}
 	if(posX <= 0 || posX >= gridX-1 || posY <= 0 || posY >= gridY-1) {
 		currentState = DEAD;
-		printf("DEAD\n");
 		return;
 	}
 	if(sDirection == UP) {
