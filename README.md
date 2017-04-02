@@ -14,12 +14,14 @@ sudo apt-get install freeglut3-dev
 
 ### Compile and Run
 
-On the src/ directory:
+Create bin/ directory:
 
 ```
-g++ *.cpp  -lGL -lGLU -lglut
+mkdir bin/
+make
 
-./a.out
+cd bin/
+./xplode
 ```
 
 ### Contributing

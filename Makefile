@@ -1,6 +1,10 @@
 # 
-#	#$(CC)  -o $@ $^ $(CFLANGS)
-#	$(CC) $^ $(CFLANGS)
+# Xplode: Makefile
+# Copyright (C) 2016 Bytes Club
+#
+# AUTHORS
+# Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+#
 TARGET = xplode
 
 SRC = src
