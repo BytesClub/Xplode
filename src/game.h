@@ -5,6 +5,14 @@
  * AUTHORS
  * Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  */
+#ifndef GAME_H
+#define GAME_H
+
+/*
+ * File Guards:
+ * To protect the file from getting included
+ * more than once
+ */
 
 #define UP 1
 #define DOWN -1
@@ -14,3 +22,5 @@
 void initGrid(int, int);
 void drawGrid();
 void drawSnake();
+
+#endif
