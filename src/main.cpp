@@ -9,7 +9,9 @@
 
 #include<GL/gl.h>
 #include<GL/glut.h>
+
 #include "game.h"
+#include "player.h"
 
 #include<stdio.h>
 
@@ -50,7 +52,7 @@ void display_callback()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	drawGrid();
-	drawSnake();
+	drawPlayer();
 	/*
 	 * For Double Buffering, read https://www2.cs.arizona.edu/classes/cs433/spring02/opengl/dblbuffer.html
 	 */
