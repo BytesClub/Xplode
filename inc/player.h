@@ -17,6 +17,11 @@
 #define LEFT -2
 #define REST 0
 
+
+void startPlayer(int, int);
 void drawPlayer();
+int getPlayerX();
+int getPlayerY();
+int getPlayerDirection();
 
 #endif

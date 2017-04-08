@@ -21,6 +21,7 @@ $(BIN)/$(TARGET): $(OBJECT)
 	$(CC) $^ -o $@ $(CFLAGS)
 
 $(BIN)/%.o: $(SRC)/%.cpp
+	@mkdir -p $(BIN)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 help:

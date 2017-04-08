@@ -1,5 +1,5 @@
 /*
- * Xplode - player.h
+ * Xplode - player.cpp
  * Copyright (C) 2016 Bytes Club
  *
  * AUTHORS
@@ -11,11 +11,18 @@
 #include "player.h"
 #include "game.h"
 
-int posX = 20, posY = 20;
+
 short sDirection = REST;
 int currentState = ALIVE;
 
+int posX, posY;
 extern int gridX, gridY;
+
+void startPlayer(int x, int y)
+{
+	posX = x;
+	posY = y;
+}
 
 void drawPlayer()
 {
@@ -35,6 +42,22 @@ void drawPlayer()
 	} else if(sDirection == RIGHT) {
 		posX++;
 	}
+	glColor3f(0.0, 1.0, 1.0);
 	glRectd(posX, posY, posX+1, posY+1);
 
+}
+
+int getPlayerX()
+{
+	return posX;
+}
+
+int getPlayerY()
+{
+	return posY;
+}
+
+int getPlayerDirection()
+{
+	return sDirection;
 }
