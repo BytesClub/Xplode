@@ -8,6 +8,7 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 
+#include "declaration.h"
 #include "player.h"
 #include "game.h"
 

@@ -27,13 +27,13 @@ void move_bullet()
 {
 	for(int i = 0;i < bullets.size();i++) {
 		if (bullets[i].dir == UP) {
-			bullets[i].y++;
+			bullets[i].y+=BULLET_SPEED;
 		} else if (bullets[i].dir == DOWN) {
-			bullets[i].y--;
+			bullets[i].y-=BULLET_SPEED;
 		} else if(bullets[i].dir == LEFT) {
-			bullets[i].x--;
+			bullets[i].x-=BULLET_SPEED;
 		} else if(bullets[i].dir == RIGHT) {
-			bullets[i].x++;
+			bullets[i].x+=BULLET_SPEED;
 		}
 	}
 }

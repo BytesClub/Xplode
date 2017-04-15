@@ -9,6 +9,7 @@
 #include<GL/gl.h>
 #include<GL/glut.h>
 
+#include "declaration.h"
 #include "game.h"
 
 int gridX, gridY;
@@ -24,7 +25,7 @@ void initGrid(int rows, int columns)
 void unit(int x, int y)
 {
 	if(x == 0 || x == gridX -1 || y == 0 || y == gridY -1) {
-		if (animateState == 0) {
+		if ( currentState == ALIVE && animateState == 0) {
 			glColor3f(1.0, 0.0, 0.0);
 		} else {
 			glColor3f(0.5, 0.0, 0.0);

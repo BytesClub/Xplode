@@ -16,6 +16,9 @@
  * State: Alive or Dead
  * Movement: Current direction of movement
  */
+#ifndef DECLARATION_H
+#define DECLARATION_H
+
 #define ALIVE 1
 #define DEAD 0
 
@@ -23,4 +26,14 @@
 #define DOWN -1
 #define RIGHT 2
 #define LEFT -2
-#define REST 0 
+#define REST 0
+
+/*
+ * Bullets
+ */
+#define BULLET_SPEED 2
+
+extern short sDirection;
+extern int currentState;
+
+#endif
