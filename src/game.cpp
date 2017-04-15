@@ -12,9 +12,11 @@
 #include "game.h"
 
 int gridX, gridY;
+short animateState;
 
 void initGrid(int rows, int columns)
 {
+	animateState = 0;
 	gridX = columns;
 	gridY = rows;
 }
@@ -22,7 +24,11 @@ void initGrid(int rows, int columns)
 void unit(int x, int y)
 {
 	if(x == 0 || x == gridX -1 || y == 0 || y == gridY -1) {
-		glColor3f(1.0, 0.0, 0.0);
+		if (animateState == 0) {
+			glColor3f(1.0, 0.0, 0.0);
+		} else {
+			glColor3f(0.5, 0.0, 0.0);
+		}
 		glLineWidth(4.0);
 	} else {
 		glColor3f(1.0,1.0,1.0);
@@ -38,6 +44,7 @@ void unit(int x, int y)
 
 void drawGrid()
 {
+	animateState = 1 - animateState;
 	for(int x = 0;x < gridX;x++) {
 		for(int y = 0;y < gridX;y++) {
 			unit(x,y);
