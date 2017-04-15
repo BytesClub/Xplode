@@ -13,6 +13,8 @@
 
 #include "game.h"
 #include "player.h"
+#include "bullets.h"
+#include "declaration.h"
 
 #include<stdio.h>
 
@@ -36,14 +38,6 @@ void normal_key(unsigned char, int, int);
 
 extern short sDirection;
 
-struct bullet {
-	int x;
-	int y;
-	int dir;
-};
-
-std::vector<struct bullet> bullets;
-
 int main(int argc, char** argv)
 {
 	glutInit(&argc, argv);
@@ -65,29 +59,6 @@ void init()
 	glClearColor(0.0,0.0,0.0,0.0);
 	initGrid(ROWS, COLUMNS);
 	startPlayer(20,20);
-}
-
-void drawBullets()
-{
-	glColor3f(1.0, 0.0, 0.0);
-	for(int i = 0;i < bullets.size();i++) {
-		glRectd(bullets[i].x + 0.25, bullets[i].y + 0.25, bullets[i].x + 0.75, bullets[i].y + 0.75);
-	}
-}
-
-void move_bullet()
-{
-	for(int i = 0;i < bullets.size();i++) {
-		if (bullets[i].dir == UP) {
-			bullets[i].y++;
-		} else if (bullets[i].dir == DOWN) {
-			bullets[i].y--;
-		} else if(bullets[i].dir == LEFT) {
-			bullets[i].x--;
-		} else if(bullets[i].dir == RIGHT) {
-			bullets[i].x++;
-		}
-	}
 }
 
 void display_callback()
