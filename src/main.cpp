@@ -16,8 +16,8 @@
 
 #include<stdio.h>
 
-#define ROWS 40
-#define COLUMNS 40
+#define ROWS 80
+#define COLUMNS 80
 #define FPS 10
 
 /*

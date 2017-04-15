@@ -31,7 +31,7 @@ void unit(int x, int y)
 		}
 		glLineWidth(4.0);
 	} else {
-		glColor3f(1.0,1.0,1.0);
+		glColor3f(0.0,0.0,0.0);
 		glLineWidth(1.0);
 	}
 	glBegin(GL_LINES);
