@@ -17,7 +17,6 @@ sudo apt-get install freeglut3-dev
 Create bin/ directory:
 
 ```
-mkdir bin/
 make
 
 cd bin/
