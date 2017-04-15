@@ -158,6 +158,15 @@ void normal_key(unsigned char key, int, int)
 			bt.x = getPlayerX();
 			bt.y = getPlayerY();
 			bt.dir = getPlayerDirection() == REST ? UP : getPlayerDirection();
+			if (bt.dir == UP) {
+				bt.y++;
+			} else if (bt.dir == DOWN) {
+				bt.y--;
+			} else if (bt.dir == LEFT) {
+				bt.x--;
+			} else if (bt.dir == RIGHT) {
+				bt.x++;
+			}
 			bullets.push_back(bt);
 			break;
 	}
